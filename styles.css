@@ -193,3 +193,15 @@ footer{
 	text-align: center;
 	padding-top: 5%;
 }
+@media only screen and (max-width: 480px) {
+  .navbar1 a {
+  padding: 14px 35px;
+  font-size: 23px;
+}
+}
+@media only screen and (max-width: 768px) {
+  
+}
+@media only screen and (max-width: 1024px) {
+  
+}
