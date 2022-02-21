@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 /*-------------MAINS-----------*/
 *{
 	margin: 0;
 	padding: 0;
-		font-family: 'Encode Sans Expanded', sans-serif;
+		font-family: 'Passion One', sans-serif;
 		    box-sizing: border-box;
 }
 html{
@@ -15,88 +15,45 @@ html{
 
 
 /*-------------NAV-----------*/
-nav {
-    background: #333;
-    color: #8A3FFC;
-    display: flex;
-    justify-content: space-between;
-}
-nav .mainMenu {
-    display: flex;
-    list-style: none;
-}
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #8A3FFC;
-    font-size: 1.5rem;
-}
-nav .mainMenu li a:hover {
-    background: rgb(255,94,0);
-}
-nav .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-}
-nav .mainMenu .closeMenu , .icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-}
-.fa-facebook:hover {color: rgb(0, 110, 255);}
-.fa-twitter:hover {color: rgb(86, 154, 243);}
-.fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
-
-nav .nav__logo {
-    margin: 12px;
-    font-size: 35px;
-    cursor: pointer;
-}
-@media(max-width: 800px){
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-    }
-    nav .openMenu {
-        display: block;
-    }
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-        font-size: 1.6rem;
-    }
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  border: 2px solid #333;
 }
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #8A3FFC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #8A3FFC;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #8A3FFC;
+  color: #333;
+  float: left;
+}
+
+
+.topnav .icon {
+  display: none;
+  padding: 9px;
+}
 /*-------------NAV-----------*/
 
 
-
+/*-------------Main-----------*/
 
 .header_logo{
   width: 30%;
@@ -139,11 +96,12 @@ nav .nav__logo {
 	text-align: center;
 	color: black;
 margin-top: 10px;
-
 }
-.progress__bar{
-
+.💉{
+  	color: #8A3FFC;
+margin-top: 10px;
 }
+.progress__bar{}
 .progress_line{
 	border: 3px solid black;
 	color: black;
@@ -187,20 +145,27 @@ margin-top: 10px;
 .catagories{
 	margin: 10px 0px;
 }
+.catagories i{
+  margin-top: 2p;
+}
 .main3{
 	background: #273036;
 }
 .card1{
 	border: 5px solid #8A3FFC;
 	color:  #8A3FFC;
-height: 13rem;
+height: 11rem;
+width:16rem;
+display: inline-block;
+margin: 0 auto;
 }
 .services{
-	margin: 10px;
+	margin: 10px auto;
 	display: grid;
 	gap: 1.5rem;
 grid-template-columns: repeat(2, 1fr);
-margin-left: 25px;
+
+
 }
 .c-text{
 	text-align: center;
@@ -208,7 +173,10 @@ margin-left: 25px;
 .main4{
 	background: #273036;
 	padiing: 20px 0px;
-	
+}
+#title{
+  padding: 15px;
+  font-size: 170%;
 }
 .btn2{
 	padding: 10px;
@@ -219,6 +187,7 @@ margin-left: 25px;
 	margin: 2px;
 }
 .black--bg{
+  margin-top: -2.5%;
 	background: #273036;
 }
 .logo{
@@ -227,6 +196,9 @@ height: 25%;
 border: 4px solid #8A3FFC;
 border-radius: 50%;
 }
+/*-------------MAINS-----------*/
+
+/*-------------FOOTER-----------*/
 footer{
 	padding: 15% 0%;
 	background: #8A3FFC;
@@ -234,3 +206,44 @@ footer{
 	text-align: center;
 	padding-top: 5%;
 }
+/*-------------FOOTER-----------*/
+
+/*-------------RESPONSIVE-----------*/
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.services{
+	margin: 10px;
+	display: grid;
+grid-template-columns: repeat(1, 1fr);
+}
+.black--bg{
+  margin-top: -3.5%;
+}
+}
+@media screen and (max-width: 375px) {
+  .black--bg{
+  margin-top: -4.5%;
+}
+}
+/*-------------RESPONSIVE-----------*/
