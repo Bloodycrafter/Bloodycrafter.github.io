@@ -290,10 +290,16 @@ grid-template-columns: repeat(1, 1fr);
 .black--bg{
   margin-top: -3%;
 }
+.container{
+  width: 350px;
+}
 }
 @media screen and (max-width: 375px) {
   .black--bg{
   margin-top: -4%;
+}
+.container{
+  width: 300px;
 }
 }
 /*-------------RESPONSIVE-----------*/
