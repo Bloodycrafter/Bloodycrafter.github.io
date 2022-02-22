@@ -99,7 +99,7 @@ margin-top: 10px;
 }
 .💉{
   	color: #8A3FFC;
-margin-top: 10px;
+padding: 15px 0;
 }
 .progress__bar{}
 .progress_line{
@@ -172,7 +172,7 @@ grid-template-columns: repeat(2, 1fr);
 }
 .main4{
 	background: #273036;
-	padiing: 20px 0px;
+	margin-top: 15px;
 }
 #title{
   padding: 15px;
@@ -187,7 +187,7 @@ grid-template-columns: repeat(2, 1fr);
 	margin: 2px;
 }
 .black--bg{
-  margin-top: -2.5%;
+  margin-top: -1.5%;
 	background: #273036;
 }
 .logo{
@@ -196,11 +196,61 @@ height: 25%;
 border: 4px solid #8A3FFC;
 border-radius: 50%;
 }
+.container{
+width: 400px;
+margin: auto;
+border-radius: 4px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+background: #8A3FFC;
+}
+.img-container img{
+width: 100%;
+height: 100%;
+border-radius: 4px 4px 0px 0px;
+}
+.content-container{
+padding: 10px 20px;
+}
+.blogtil{
+font-size: 24px;
+}
+.blogtxt{
+color: black;
+font-weight: 700;
+font-size: 17px;
+letter-spacing: 0.02rem;
+line-height: 1.3rem;
+margin-bottom: 30px;
+}
+.btn{
+background: #000000;
+color: #8A3FFC;
+font-size: 12px;
+padding: 10px 20px;
+letter-spacing: 0.04rem;
+text-transform: uppercase;
+text-decoration: none;
+font-weight: 700;
+}
+.btn:hover{
+background: #7C66FF;
+}
+input{
+  width: 70%;
+  border: 3px solid #8A3FFC;
+  margin: 10px 0;
+  padding: 7px 30px;
+  border-radius: 10px;
+}
+placeholder{
+  text-align: center;
+}
+
 /*-------------MAINS-----------*/
 
 /*-------------FOOTER-----------*/
 footer{
-	padding: 15% 0%;
+	padding: 10% 0%;
 	background: #8A3FFC;
 	color: black;
 	text-align: center;
@@ -238,12 +288,12 @@ footer{
 grid-template-columns: repeat(1, 1fr);
 }
 .black--bg{
-  margin-top: -4%;
+  margin-top: -3%;
 }
 }
 @media screen and (max-width: 375px) {
   .black--bg{
-  margin-top: -5%;
+  margin-top: -4%;
 }
 }
 /*-------------RESPONSIVE-----------*/
